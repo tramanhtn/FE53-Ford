@@ -1,0 +1,51 @@
+.contact{
+    background-color: $color-blue-2;
+    .contact__content{
+        width: 90%;
+        margin: auto;
+        padding: $pd-11 0;
+        .update, .share{
+            cursor: pointer;
+            i{
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50%;
+                @include styleText($color-white-0,$fs-2 + 2,$fw-bold);
+                background-color: $color-blue-5;
+            }
+            span{
+                @include styleText($color-blue-5,$fs-2 + 2,$fw-slim);
+            }
+        }
+        .social{
+            align-self: center;
+            text-align: right;
+            span{
+                @include styleText($color-white-0,$fs-0,$fw-slim);
+            }
+            .fab{
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 2px;
+                @include styleText($color-white-0,$fs-2 + 2,$fw-bold);
+                cursor: pointer;
+            }
+            .fa-facebook-square{
+                background-color: #3C5B99;
+            }
+            .fa-twitter{
+                background-color: #1DA2F3;
+            }
+            .fa-youtube{
+                background-color: #FF0100;
+            }
+            .fa-instagram{
+                background-color: #DC2C75;
+            }
+        }
+    }
+}

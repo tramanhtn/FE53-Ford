@@ -1,0 +1,154 @@
+.fordGrid {
+    margin: $mg-5 0 0;
+    .fordGird__content {
+        .fordGrid__deal {
+            background-image: url("https://www.ford.com/cmslibs/content/dam/brand_ford/en_us/brand/legacy/marketing/sweeten-the-deal/incentives_ecosport.jpg/_jcr_content/renditions/cq5dam.web.1440.1440.jpeg");
+            background-position: center center;
+            background-size: cover;
+            height: 230px;
+            padding: $pd-13;
+            text-align: center;
+            h1 {
+                @include styleText($color-white-0, $fs-6, $fw-normal);
+                margin-bottom: $mg-4;
+            }
+            a {
+                @include styleText($color-white-0, $fs-2, $fw-slim);
+                &:hover {
+                    text-decoration: none;
+                    color: $color-blue-2;
+                }
+            }
+        }
+        .fordGrid__happen {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            .happen {
+                grid-column: 1 / span 3;
+                text-align: center;
+                align-self: center;
+                h2 {
+                    @include styleText($color-gray-2, $fs-4 + 3, $fw-normal);
+                }
+                p {
+                    @include styleText($color-gray-2, $fs-2, $fw-normal);
+                }
+            }
+
+            .fordGrid__item {
+                position: relative;
+                overflow: hidden;
+                transition: all 0.5s;
+                img {
+                    width: 100%;
+                }
+                .fordGrid__small {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: $color-blue-4;
+                    padding: $pd-7;
+                    p {
+                        margin-bottom: 0;
+                        @include styleText($color-white-0, $fs-0, $fw-normal);
+                    }
+                    i {
+                        @include styleText($color-white-0, $fs-3, $fw-bold);
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        border-radius: 50%;
+                        border: 2px solid $color-white-0;
+                        text-align: center;
+                        margin-right: $mg-4;
+                        &:hover {
+                            background-color: $color-white-0;
+                            color: $color-blue-1;
+                        }
+                    }
+                }
+                transition: all 0.5s;
+                &:hover {
+                    img {
+                        transform: scale(1.1, 1.1);
+                        transition: all 0.5s;
+                    }
+                }
+            }
+            .talk {
+                grid-row: 2 / span 2;
+                grid-column: 1 / span 2;
+                .fordGrid__small {
+                    p {
+                        margin-bottom: 0;
+                        @include styleText($color-white-0, $fs-3, $fw-normal);
+                    }
+                    i {
+                        @include styleText($color-white-0, $fs-4, $fw-bold);
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+.fordGrid__viewMore{
+    background-color: $color-blue-1;
+    text-align: center;
+    padding: $pd-9;
+
+    p{
+        @include styleText($color-white-0,$fs-4,$fw-normal);
+        margin-right: $mg-3;
+        margin-bottom: 0;
+    }
+    i{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid $color-white-0;
+        @include styleText($color-white-0,$fs-3,$fw-bold);
+    }
+}
+//RESPONSIVE
+.fordGrid {
+    .fordGird__content {
+        .fordGrid__deal {
+            //576px
+            @include responsive("small") {
+                h1 {
+                    @include styleText($color-white-0, $fs-5, $fw-normal);
+                }
+            }
+        }
+        .fordGrid__happen {
+            //768px
+            @include responsive("medium") {
+                display: block;
+                .happen {
+                    p {
+                        display: none;
+                    }
+                    padding: $pd-13;
+                }
+                .fordGrid__item {
+                    .fordGrid__small {
+                        padding: $pd-10 $pd-7;
+                        p {
+                            @include styleText($color-white-0, $fs-2, $fw-normal);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

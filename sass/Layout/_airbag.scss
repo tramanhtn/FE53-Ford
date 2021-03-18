@@ -1,0 +1,14 @@
+.airbag{
+    background-color: #F7F7F7;
+    .airbag__content{
+        text-align: center;
+        padding: $pd-9 0;
+        h1{
+            padding: $pd-9 0;
+            @include styleText($color-red-0,$fs-6,$fw-normal);
+        }
+        button{
+            margin-bottom: $mg-5;
+        }
+    }
+}

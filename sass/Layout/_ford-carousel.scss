@@ -1,0 +1,153 @@
+.ford-carousel {
+    margin-top: 125px;
+    .owl-carousel {
+        position: relative;
+        .item {
+            text-decoration: none;
+            #ford-carousel1 {
+                background-image: url(../../img/carousel-1.webp);
+            }
+            #ford-carousel2 {
+                background-image: url(../../img/carousel-2.webp);
+            }
+            #ford-carousel3 {
+                background-image: url(../../img/carousel-3.webp);
+            }
+
+            .ford-carousel__item {
+                height: 100vh;
+                padding: $pd-13;
+                background-size: cover;
+                background-position: center;
+                h2 {
+                    @include styleText($color-white-0, $fs-6, $fw-bold-0);
+                    padding-bottom: 20px;
+                }
+                button {
+                    @include styleButton($color-white-0, $pd-6, $pd-9, $color-trans);
+                    @include styleText($color-blue-1, $fs-2, $fw-normal);
+                    width: 270px;
+                    &:hover {
+                        background-color: $color-blue-1;
+                        color: $color-white-0;
+                    }
+                }
+                p {
+                    @include styleText($color-white-0, $fs-2, $fw-slim);
+                    .fa-angle-right {
+                        margin-left: 15px;
+                        display: inline-block;
+                        width: 35px;
+                        height: 35px;
+                        border: 2px solid white;
+                        border-radius: 50%;
+                        line-height: 35px;
+                        text-align: center;
+                        &:hover {
+                            background-color: white;
+                            color: $color-blue-5;
+                        }
+                    }
+                }
+            }
+        }
+
+        .owl-nav {
+            button {
+                font-size: 50px;
+                color: white;
+                &:hover {
+                    background-color: transparent;
+                }
+                span {
+                    background-color: rgba(0, 0, 0, 0.803);
+                    padding: 10px 15px;
+                    &:hover {
+                        background-color: $color-white-0;
+                        color: rgba(0, 0, 255, 0.26);
+                    }
+                }
+            }
+            .owl-prev {
+                position: absolute;
+                left: -3px;
+                top: 40%;
+            }
+            .owl-next {
+                position: absolute;
+                right: -3px;
+                top: 40%;
+            }
+        }
+        .owl-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            .owl-dot {
+                span {
+                    background-color: white;
+                    transition: all 0.5s;
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+                }
+            }
+            .active {
+                span {
+                    background-color: $color-trans;
+                    border: 2px solid white;
+                    outline: none;
+                    transition: all 0.5s;
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+}
+
+// Responsive
+
+//992px
+
+.ford-carousel {
+    @include responsive("large") {
+        margin-top: 80px;
+
+        .owl-carousel {
+            .item {
+                .ford-carousel__item {
+                    height: 80vh;
+                    padding:$pd-8;
+                    h2 {
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+    }
+
+//768px
+    @include responsive("medium") {
+        
+        .owl-carousel {
+            .item {
+                .ford-carousel__item {
+                    text-align: center;
+                    
+                    background-repeat: no-repeat;
+                    h2 {
+                        font-size: 20px;
+                        
+                    }
+                    button{
+                       width:80%;
+                    }
+                }
+            }
+            .owl-nav{
+                display:none;
+            }
+        }
+    }
+}

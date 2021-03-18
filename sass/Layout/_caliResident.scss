@@ -1,0 +1,18 @@
+.caliResident__content{
+    background-color: $color-blue-3;
+    text-align: center;
+    padding: $pd-9 0 $pd-7;
+    h1{
+        @include styleText($color-white-0,$fs-6,$fw-normal);
+    }
+    p{
+        @include styleText($color-white-0,$fs-2,$fw-normal);
+        a{
+            @include styleText($color-blue-5,$fs-2,$fw-normal);
+            text-decoration: underline;
+        }
+    }
+    button{
+        width: 314px;
+    }
+}

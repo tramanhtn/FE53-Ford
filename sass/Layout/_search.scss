@@ -1,0 +1,43 @@
+.search__content {
+    background-color: $color-gray-2;
+    padding: $pd-11;
+    .icn_search {
+        button{
+            padding: $pd-4;
+            background-color: $color-gray-2;
+            @include styleText($color-white-0,$fs-3,$fw-normal);
+            border: none;
+        }
+        .form-control{
+            background-color: $color-gray-2;
+            border: none;
+            &::placeholder{
+                @include styleText($color-white-0,$fs-3,$fw-normal);
+            }
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+    .popular{
+        display: flex;
+        padding: $pd-4 0;
+        span{
+            @include styleText($color-white-0, $fs-1, $fw-normal);
+            margin-right: $mg-4;
+        }
+        li{
+            display: inline-block;
+            list-style: none;
+            margin-right: $mg-4;
+            // padding: $pd-4 0;
+            a{
+                @include styleText($color-gray-3, $fs-1, $fw-normal);
+                &:hover{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.style-dropdown-details {
+    .dropdown-detail {
+        .mini-tag{
+            img{
+                width:20px;
+                height:20px;
+            }
+            height:20px;
+            @include styleText($color-gray-5,$fs-0,$fw-slim);
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            line-height: 2rem;
+            img {
+                max-width: 164px;
+                max-height: 71px;
+            }
+        }
+        a:nth-child(3) {
+            @include styleText($color-blue-2, $fs-1, $fw-bold);
+
+            &::after {
+                content: " >";
+                display: none;
+                position: relative;
+                left: 5px;
+            }
+            &:hover::after {
+                display: inline-block;
+            }
+        }
+
+        a:nth-child(5),
+        a:nth-child(6) {
+            @include styleText($color-blue-1, $fs-1, $fw-normal);
+
+            span {
+                display: inline-block;
+                border-bottom: 1px solid $color-blue-4;
+                transition: all 0.5s;
+                &:hover {
+                    border-color: $color-blue-3;
+                }
+            }
+        }
+
+        small {
+            @include styleText($color-gray-4, $fs-0, $fw-normal);
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@mixin styleText($color,$fs,$fw){
+    color:$color;
+    font-size:$fs;
+    font-weight: $fw;
+}
+
+@mixin styleButton($bg-color,$py,$px,$border-color){
+    background-color:$bg-color;
+    padding:$py $px;
+    border:1px solid $border-color;
+}
+
+@mixin styleButtonHover($color,$bg-color,$border-color){
+    color:$color;
+    background-color:$bg-color;
+    border-color: $border-color;
+}
+
+// $screen: biến chứa tên màn hình
+@mixin responsive($screen) {
+    //kiểm tra tên màn hình hợp lệ
+    @if(map-has-key($map:$breakpoints , $key:$screen)){
+        //tên màn hình đúng (hợp lệ)
+      
+        $value:map-get($map:$breakpoints , $key:$screen);
+        @media screen and (max-width:$value){
+            @content;
+        }
+    }
+    @else{
+        @warn 'Man hinh khong hop le';
+    }
+}

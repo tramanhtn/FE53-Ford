@@ -1,0 +1,26 @@
+.fordbtn-blue{
+    width:186px;
+    @include styleButton($color-blue-1,$pd-7,$pd-9,$color-blue-1);
+    @include styleText($color-white-0,$fs-2,$fw-normal);
+    &:hover{
+        @include styleButtonHover($color-blue-2,$color-white-0,$color-blue-2);
+    }
+}
+.fordbtn-red{
+    width:186px;
+    @include styleButton($color-red-0,$pd-7,$pd-9,$color-red-0);
+    @include styleText($color-white-0,$fs-2,$fw-normal);
+    &:hover{
+        @include styleButtonHover($color-red-0,$color-white-0,$color-red-0);
+    }
+}
+
+.fordbtn-nav{
+    @include styleButton($color-blue-1,$pd-5,$pd-9,$color-blue-1);
+    border-radius: 20px;
+    width:186px;
+    @include styleText($color-white-0,$fs-0,$fw-normal);
+    &:hover{
+        @include styleButtonHover($color-black-0,$color-white-0,$color-black-0);
+    }
+}

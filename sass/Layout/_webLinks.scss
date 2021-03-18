@@ -1,0 +1,23 @@
+.webLinks {
+    background-color: $color-black-1;
+    .webLinks__content {
+        width: 90%;
+        margin: auto;
+        padding: $pd-11 0 $pd-13;
+        p {
+            @include styleText($color-white-0, $fs-2, $fw-normal);
+            padding-bottom: $pd-4;
+        }
+        li {
+            list-style: none;
+            padding-bottom: $pd-4;
+            a {
+                @include styleText($color-gray-3, $fs-1, $fw-normal);
+                &:hover {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

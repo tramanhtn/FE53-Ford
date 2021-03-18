@@ -1,0 +1,70 @@
+//variable color
+$color-black-0:#102b4e;
+$color-black-1: #242424;
+$color-white-0: #fff;
+$color-blue-1: #0276b3;
+$color-blue-2: #102b4e;
+$color-blue-3: #092A46;
+$color-blue-4: rgba(6,120,188,0.75);
+$color-blue-5:#27A9E8;
+$color-gray-1: #f7f7f7;
+$color-gray-2: #333;
+$color-gray-3: #a7a7a7;
+$color-gray-4:#555;
+$color-gray-5:#999;
+$color-gray-6:#777;
+$color-gray-7:#626466;
+$color-red-0: #D92E14;
+$color-trans:transparent;
+
+//variable margin
+$mg-0: 1px;
+$mg-1: 6px;
+$mg-2: 8px;
+$mg-3: 10px;
+$mg-4: 15px;
+$mg-5: 20px;
+$mg-6: 40px;
+
+//variable padding
+$pd-0: 2px;
+$pd-1: 3px;
+$pd-2: 5px;
+$pd-3: 7px;
+$pd-4: 8px;
+$pd-5: 10px;
+$pd-6: 13px;
+$pd-7: 15px;
+$pd-8: 18px;
+$pd-9: 20px;
+$pd-10: 25px;
+$pd-11: 30px;
+$pd-12: 35px;
+$pd-13: 45px;
+
+// font size
+$fs-0:12px;
+$fs-1:14px; //default
+$fs-2:16px;
+$fs-3:21px;
+$fs-4:24px;
+$fs-5:30px;
+$fs-6:42px;
+
+
+//variable font-weight
+$fw-normal: normal;
+$fw-bold-3: 400;
+$fw-bold-0: 500;
+$fw-bold: bold;
+$fw-slim: 100;
+
+
+
+//break points
+$breakpoints:(
+    'extra-large': 1200px,
+    'large' : 992px,
+    'medium' : 768px,
+    'small' : 576px,
+)

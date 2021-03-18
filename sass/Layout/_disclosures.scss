@@ -1,0 +1,31 @@
+.disclosures__content{
+    margin: $mg-6;
+    text-align: center;
+    a{
+        @include styleText($color-blue-1, $fs-1, $fw-normal);
+        &:hover{
+            color: $color-blue-2;
+            text-decoration: none;
+        }
+        i{
+            transition: all 0.5s;
+        }
+    }
+}
+.disclosures #collapseExample{
+    margin-bottom: $mg-5;
+    background-color: $color-gray-1;
+    max-height: 200px;
+    overflow-y: scroll;
+    .card-body{
+        padding: $pd-10;
+        li{
+            list-style: none;
+            @include styleText($color-gray-2,$fs-0,$fw-slim);
+        }
+    }
+}
+.xoay{
+    transform: rotate(-180deg);
+
+}

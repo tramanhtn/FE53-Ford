@@ -1,0 +1,1277 @@
+.style-dropdown-details .dropdown-detail .mini-tag, header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-detail .mini-tag {
+  height: 20px;
+  color: #999;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.style-dropdown-details .dropdown-detail .mini-tag img, header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-detail .mini-tag img {
+  width: 20px;
+  height: 20px;
+}
+
+.style-dropdown-details .dropdown-detail a, header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-detail a {
+  display: block;
+  text-decoration: none;
+  line-height: 2rem;
+}
+
+.style-dropdown-details .dropdown-detail a img, header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-detail a img {
+  max-width: 164px;
+  max-height: 71px;
+}
+
+.style-dropdown-details .dropdown-detail a:nth-child(3), header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-detail a:nth-child(3) {
+  color: #102b4e;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.style-dropdown-details .dropdown-detail a:nth-child(3)::after, header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-detail a:nth-child(3)::after {
+  content: " >";
+  display: none;
+  position: relative;
+  left: 5px;
+}
+
+.style-dropdown-details .dropdown-detail a:nth-child(3):hover::after, header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-detail a:nth-child(3):hover::after {
+  display: inline-block;
+}
+
+.style-dropdown-details .dropdown-detail a:nth-child(5), header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-detail a:nth-child(5),
+.style-dropdown-details .dropdown-detail a:nth-child(6),
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-detail a:nth-child(6) {
+  color: #0276b3;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.style-dropdown-details .dropdown-detail a:nth-child(5) span, header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-detail a:nth-child(5) span,
+.style-dropdown-details .dropdown-detail a:nth-child(6) span,
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-detail a:nth-child(6) span {
+  display: inline-block;
+  border-bottom: 1px solid rgba(6, 120, 188, 0.75);
+  transition: all 0.5s;
+}
+
+.style-dropdown-details .dropdown-detail a:nth-child(5) span:hover, header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-detail a:nth-child(5) span:hover,
+.style-dropdown-details .dropdown-detail a:nth-child(6) span:hover,
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-detail a:nth-child(6) span:hover {
+  border-color: #092A46;
+}
+
+.style-dropdown-details .dropdown-detail small, header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-detail small {
+  color: #555;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: sans-serif, Arial, Helvetica;
+  color: #333;
+  font-size: 14px;
+  font-weight: normal;
+  scroll-behavior: smooth;
+}
+
+.fordbtn-blue {
+  width: 186px;
+  background-color: #0276b3;
+  padding: 15px 20px;
+  border: 1px solid #0276b3;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.fordbtn-blue:hover {
+  color: #102b4e;
+  background-color: #fff;
+  border-color: #102b4e;
+}
+
+.fordbtn-red {
+  width: 186px;
+  background-color: #D92E14;
+  padding: 15px 20px;
+  border: 1px solid #D92E14;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.fordbtn-red:hover {
+  color: #D92E14;
+  background-color: #fff;
+  border-color: #D92E14;
+}
+
+.fordbtn-nav {
+  background-color: #0276b3;
+  padding: 10px 20px;
+  border: 1px solid #0276b3;
+  border-radius: 20px;
+  width: 186px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.fordbtn-nav:hover {
+  color: #102b4e;
+  background-color: #fff;
+  border-color: #102b4e;
+}
+
+header .bronco {
+  overflow: hidden;
+  color: #102b4e;
+  font-size: 12px;
+  font-weight: normal;
+  background-color: #f7f7f7;
+  width: 100%;
+  top: 0;
+}
+
+header .bronco .bronco__details {
+  padding: 0 45px;
+}
+
+header .bronco .bronco__details .bronco-logo {
+  display: inline-block;
+}
+
+header .bronco .bronco__details .bronco-logo img {
+  display: inline-block;
+  width: 43px;
+  height: 30px;
+}
+
+header .bronco .bronco__details .bronco-logo img:hover {
+  color: #0276b3;
+}
+
+header .bronco .bronco__details .bronco-text {
+  color: #102b4e;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+header .bronco .bronco__details .bronco-text:hover {
+  color: #0276b3;
+}
+
+header .bronco .bronco__details .bronco-loca-logo {
+  color: #102b4e;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+header .bronco .bronco__details .bronco-loca-logo:hover {
+  color: #0276b3;
+}
+
+header .bronco .bronco__details .bronco-loca-text {
+  color: #0276b3;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+header .ford_navBar .navbar {
+  padding: 18px 45px;
+  box-shadow: 0 2px 10px #a7a7a7;
+}
+
+header .ford_navBar .navbar .navbar-toggler .navbar-toggler-icon .fa-bars {
+  font-size: 25px;
+}
+
+header .ford_navBar .navbar .navbar-toggler .menuBar-icon {
+  color: #333;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+header .ford_navBar .navbar .navbar-brand img {
+  width: 93px;
+  height: 35px;
+}
+
+header .ford_navBar .navbar #ford-navContent {
+  position: unset;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav {
+  width: 100%;
+  position: unset;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details {
+  position: unset;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .nav-link {
+  color: #0276b3;
+  font-size: 14px;
+  font-weight: 400;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .nav-link:hover {
+  color: #102b4e;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .nav-link::after {
+  display: none;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .nav-link .account-logo {
+  width: 25px;
+  height: 25px;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu {
+  max-height: 630% !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  background-color: white;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  animation-name: moveDown;
+  animation-duration: 0.5s;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-menu__inner {
+  position: relative;
+  padding: 0 45px;
+  margin: 0;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-menu__button {
+  background-color: #f7f7f7;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .dropdown-menu__button .button__wrap {
+  padding: 0 45px;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .allVihe__menu {
+  scroll-behavior: smooth;
+  background-color: #f7f7f7;
+  padding: 20px 10px;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .allVihe__menu .allVihe__item {
+  color: #0276b3;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .vehicles__type {
+  padding-top: 45px;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .vehicles__type .Vehi__title {
+  text-align: center;
+  letter-spacing: 4px;
+  color: #242424;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 18px;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .fordNav__details .dropdown-menu .vehicles__type .singleBtn {
+  width: auto;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav #account .dropdown-menu,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #finance .dropdown-menu,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #support .dropdown-menu,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #EN .dropdown-menu {
+  position: absolute;
+  width: 26%;
+  left: 72%;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav #account .dropdown-menu .dropdown-item,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #finance .dropdown-menu .dropdown-item,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #support .dropdown-menu .dropdown-item,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #EN .dropdown-menu .dropdown-item {
+  color: #0276b3;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav #account .dropdown-menu .dropdown-item:hover,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #finance .dropdown-menu .dropdown-item:hover,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #support .dropdown-menu .dropdown-item:hover,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #EN .dropdown-menu .dropdown-item:hover {
+  background-color: white;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav #account .dropdown-menu .dropdown-item::after,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #finance .dropdown-menu .dropdown-item::after,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #support .dropdown-menu .dropdown-item::after,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #EN .dropdown-menu .dropdown-item::after {
+  content: ">";
+  position: absolute;
+  right: 15px;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav #account .dropdown-menu .input-group input,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #finance .dropdown-menu .input-group input,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #support .dropdown-menu .input-group input,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #EN .dropdown-menu .input-group input {
+  border-right: none;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav #account .dropdown-menu .input-group input::placeholder,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #finance .dropdown-menu .input-group input::placeholder,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #support .dropdown-menu .input-group input::placeholder,
+header .ford_navBar .navbar #ford-navContent .navbar-nav #EN .dropdown-menu .input-group input::placeholder {
+  color: #0276b3;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .show .nav-link {
+  border-bottom: 2px solid #102b4e;
+  color: #0276b3;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header .ford_navBar .navbar #ford-navContent .navbar-nav .show .navOverlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.534);
+  left: 0;
+  top: 0;
+  z-index: -2;
+}
+
+.underLine__allVehie {
+  border-bottom: 2px solid #102b4e;
+  color: #0276b3;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.changeColor {
+  background-color: #102b4e !important;
+  color: #fff !important;
+}
+
+@keyframes moveDown {
+  0% {
+    top: -1000px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ford_navBar .navbar {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .ford_navBar .navbar .navbar-brand {
+    padding-left: 10px;
+  }
+  .ford_navBar .navbar .navbar-toggler {
+    margin-right: 10px;
+  }
+  .ford_navBar .navbar #ford-navContent {
+    height: 100vh !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 20px !important;
+    padding-bottom: 100px !important;
+    box-shadow: 5px 0 5px;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav {
+    height: auto !important;
+    justify-content: flex-start !important;
+    background-color: #f7f7f7 !important;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav .vehicles-clone #vehicles-clone__title {
+    display: block;
+    color: #0276b3;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 13px 25px;
+    width: 100% !important;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav .vehicles-clone .show .nav-link {
+    background-color: #f7f7f7 !important;
+    color: #0276b3 !important;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav .nav-link {
+    padding: 13px 25px !important;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav .navOverlay {
+    background-color: white !important;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav .dropdown-menu {
+    position: unset !important;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav .dropdown-menu .dropdown-menu__inner {
+    padding: 0 !important;
+    width: 100vw;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav .dropdown-menu .dropdown-menu__inner .dropdown-detail {
+    max-width: 235px !important;
+    padding: 25px !important;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav .dropdown-menu .dropdown-menu__button {
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-right: 30px !important;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav .dropdown-menu .dropdown-menu__button .button__wrap {
+    padding: 0 !important;
+    display: flex !important;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav .dropdown-menu .dropdown-menu__button .button__wrap a {
+    padding: 0 10px !important;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav .dropdown-menu .dropdown-menu__button .button__wrap a button {
+    width: 170px;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav #account .dropdown-menu,
+  .ford_navBar .navbar #ford-navContent .navbar-nav #finance .dropdown-menu,
+  .ford_navBar .navbar #ford-navContent .navbar-nav #support .dropdown-menu,
+  .ford_navBar .navbar #ford-navContent .navbar-nav #EN .dropdown-menu,
+  .ford_navBar .navbar #ford-navContent .navbar-nav #dealer-locate .dropdown-menu {
+    width: 100% !important;
+    left: 0 !important;
+    position: unset !important;
+    overflow-x: hidden !important;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav #Bronco-menu {
+    text-align: center;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav #Bronco-menu .bronco-logo {
+    width: 86px;
+    height: 60px;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav .show .nav-link {
+    border-bottom: none !important;
+    background-color: #102b4e !important;
+    color: #fff !important;
+  }
+  .ford_navBar .navbar #ford-navContent .navbar-nav .show .broncoLogo {
+    background-color: #f7f7f7 !important;
+    color: #0276b3 !important;
+  }
+}
+
+.ford-carousel {
+  margin-top: 125px;
+}
+
+.ford-carousel .owl-carousel {
+  position: relative;
+}
+
+.ford-carousel .owl-carousel .item {
+  text-decoration: none;
+}
+
+.ford-carousel .owl-carousel .item #ford-carousel1 {
+  background-image: url(../../img/carousel-1.webp);
+}
+
+.ford-carousel .owl-carousel .item #ford-carousel2 {
+  background-image: url(../../img/carousel-2.webp);
+}
+
+.ford-carousel .owl-carousel .item #ford-carousel3 {
+  background-image: url(../../img/carousel-3.webp);
+}
+
+.ford-carousel .owl-carousel .item .ford-carousel__item {
+  height: 100vh;
+  padding: 45px;
+  background-size: cover;
+  background-position: center;
+}
+
+.ford-carousel .owl-carousel .item .ford-carousel__item h2 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.ford-carousel .owl-carousel .item .ford-carousel__item button {
+  background-color: #fff;
+  padding: 13px 20px;
+  border: 1px solid transparent;
+  color: #0276b3;
+  font-size: 16px;
+  font-weight: normal;
+  width: 270px;
+}
+
+.ford-carousel .owl-carousel .item .ford-carousel__item button:hover {
+  background-color: #0276b3;
+  color: #fff;
+}
+
+.ford-carousel .owl-carousel .item .ford-carousel__item p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.ford-carousel .owl-carousel .item .ford-carousel__item p .fa-angle-right {
+  margin-left: 15px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid white;
+  border-radius: 50%;
+  line-height: 35px;
+  text-align: center;
+}
+
+.ford-carousel .owl-carousel .item .ford-carousel__item p .fa-angle-right:hover {
+  background-color: white;
+  color: #27A9E8;
+}
+
+.ford-carousel .owl-carousel .owl-nav button {
+  font-size: 50px;
+  color: white;
+}
+
+.ford-carousel .owl-carousel .owl-nav button:hover {
+  background-color: transparent;
+}
+
+.ford-carousel .owl-carousel .owl-nav button span {
+  background-color: rgba(0, 0, 0, 0.803);
+  padding: 10px 15px;
+}
+
+.ford-carousel .owl-carousel .owl-nav button span:hover {
+  background-color: #fff;
+  color: rgba(0, 0, 255, 0.26);
+}
+
+.ford-carousel .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: -3px;
+  top: 40%;
+}
+
+.ford-carousel .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: -3px;
+  top: 40%;
+}
+
+.ford-carousel .owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ford-carousel .owl-carousel .owl-dots .owl-dot span {
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.ford-carousel .owl-carousel .owl-dots .owl-dot span:hover {
+  transform: scale(1.5);
+}
+
+.ford-carousel .owl-carousel .owl-dots .active span {
+  background-color: transparent;
+  border: 2px solid white;
+  outline: none;
+  transition: all 0.5s;
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 992px) {
+  .ford-carousel {
+    margin-top: 80px;
+  }
+  .ford-carousel .owl-carousel .item .ford-carousel__item {
+    height: 80vh;
+    padding: 18px;
+  }
+  .ford-carousel .owl-carousel .item .ford-carousel__item h2 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ford-carousel .owl-carousel .item .ford-carousel__item {
+    text-align: center;
+    background-repeat: no-repeat;
+  }
+  .ford-carousel .owl-carousel .item .ford-carousel__item h2 {
+    font-size: 20px;
+  }
+  .ford-carousel .owl-carousel .item .ford-carousel__item button {
+    width: 80%;
+  }
+  .ford-carousel .owl-carousel .owl-nav {
+    display: none;
+  }
+}
+
+.offer__content {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.offer__content h1 {
+  color: #333;
+  font-size: 42px;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+
+.offer__content .mustang {
+  color: #0276b3;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.offer__content .mustang:hover {
+  text-decoration: none;
+}
+
+.offer__content .mustang img {
+  width: 50%;
+}
+
+.offer__content .mustang p {
+  margin: 10px 0;
+}
+
+.offer__content .price {
+  color: #333;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.offer__content .price sup {
+  cursor: pointer;
+  padding: 2px;
+  color: #0276b3;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.offer__content .view {
+  color: #0276b3;
+  font-size: 16px;
+  font-weight: 100;
+  margin: 10px 0;
+}
+
+.offer__content .view:hover {
+  text-decoration: none;
+  color: #102b4e;
+}
+
+.modal-content {
+  padding: 25px;
+}
+
+.modal-content .modal-header {
+  align-items: flex-end;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.modal-content .modal-header .modal-title {
+  color: #555;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.modal-content .modal-header .close {
+  color: #0276b3;
+  font-size: 50px;
+  font-weight: 100;
+  outline: none;
+}
+
+.modal-content .modal-body {
+  padding: 25px;
+  color: #555;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 992px) {
+  .offer__content h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 20px 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offer__content h1 {
+    color: #333;
+    font-size: 30px;
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .offer__content h1 {
+    color: #333;
+    font-size: 21px;
+    font-weight: normal;
+  }
+  .offer__content img {
+    width: 60%;
+  }
+}
+
+.fordGrid {
+  margin: 20px 0 0;
+}
+
+.fordGrid .fordGird__content .fordGrid__deal {
+  background-image: url("https://www.ford.com/cmslibs/content/dam/brand_ford/en_us/brand/legacy/marketing/sweeten-the-deal/incentives_ecosport.jpg/_jcr_content/renditions/cq5dam.web.1440.1440.jpeg");
+  background-position: center center;
+  background-size: cover;
+  height: 230px;
+  padding: 45px;
+  text-align: center;
+}
+
+.fordGrid .fordGird__content .fordGrid__deal h1 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.fordGrid .fordGird__content .fordGrid__deal a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.fordGrid .fordGird__content .fordGrid__deal a:hover {
+  text-decoration: none;
+  color: #102b4e;
+}
+
+.fordGrid .fordGird__content .fordGrid__happen {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.fordGrid .fordGird__content .fordGrid__happen .happen {
+  grid-column: 1 / span 3;
+  text-align: center;
+  align-self: center;
+}
+
+.fordGrid .fordGird__content .fordGrid__happen .happen h2 {
+  color: #333;
+  font-size: 27px;
+  font-weight: normal;
+}
+
+.fordGrid .fordGird__content .fordGrid__happen .happen p {
+  color: #333;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.fordGrid .fordGird__content .fordGrid__happen .fordGrid__item {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.fordGrid .fordGird__content .fordGrid__happen .fordGrid__item img {
+  width: 100%;
+}
+
+.fordGrid .fordGird__content .fordGrid__happen .fordGrid__item .fordGrid__small {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(6, 120, 188, 0.75);
+  padding: 15px;
+}
+
+.fordGrid .fordGird__content .fordGrid__happen .fordGrid__item .fordGrid__small p {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.fordGrid .fordGird__content .fordGrid__happen .fordGrid__item .fordGrid__small i {
+  color: #fff;
+  font-size: 21px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.fordGrid .fordGird__content .fordGrid__happen .fordGrid__item .fordGrid__small i:hover {
+  background-color: #fff;
+  color: #0276b3;
+}
+
+.fordGrid .fordGird__content .fordGrid__happen .fordGrid__item:hover img {
+  transform: scale(1.1, 1.1);
+  transition: all 0.5s;
+}
+
+.fordGrid .fordGird__content .fordGrid__happen .talk {
+  grid-row: 2 / span 2;
+  grid-column: 1 / span 2;
+}
+
+.fordGrid .fordGird__content .fordGrid__happen .talk .fordGrid__small p {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 21px;
+  font-weight: normal;
+}
+
+.fordGrid .fordGird__content .fordGrid__happen .talk .fordGrid__small i {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+}
+
+.fordGrid__viewMore {
+  background-color: #0276b3;
+  text-align: center;
+  padding: 20px;
+}
+
+.fordGrid__viewMore p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.fordGrid__viewMore i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+  .fordGrid .fordGird__content .fordGrid__deal h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fordGrid .fordGird__content .fordGrid__happen {
+    display: block;
+  }
+  .fordGrid .fordGird__content .fordGrid__happen .happen {
+    padding: 45px;
+  }
+  .fordGrid .fordGird__content .fordGrid__happen .happen p {
+    display: none;
+  }
+  .fordGrid .fordGird__content .fordGrid__happen .fordGrid__item .fordGrid__small {
+    padding: 25px 15px;
+  }
+  .fordGrid .fordGird__content .fordGrid__happen .fordGrid__item .fordGrid__small p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+
+.airbag {
+  background-color: #F7F7F7;
+}
+
+.airbag .airbag__content {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.airbag .airbag__content h1 {
+  padding: 20px 0;
+  color: #D92E14;
+  font-size: 42px;
+  font-weight: normal;
+}
+
+.airbag .airbag__content button {
+  margin-bottom: 20px;
+}
+
+.disclosures__content {
+  margin: 40px;
+  text-align: center;
+}
+
+.disclosures__content a {
+  color: #0276b3;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.disclosures__content a:hover {
+  color: #102b4e;
+  text-decoration: none;
+}
+
+.disclosures__content a i {
+  transition: all 0.5s;
+}
+
+.disclosures #collapseExample {
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.disclosures #collapseExample .card-body {
+  padding: 25px;
+}
+
+.disclosures #collapseExample .card-body li {
+  list-style: none;
+  color: #333;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.xoay {
+  transform: rotate(-180deg);
+}
+
+.caliResident__content {
+  background-color: #092A46;
+  text-align: center;
+  padding: 20px 0 15px;
+}
+
+.caliResident__content h1 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: normal;
+}
+
+.caliResident__content p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.caliResident__content p a {
+  color: #27A9E8;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.caliResident__content button {
+  width: 314px;
+}
+
+.search__content {
+  background-color: #333;
+  padding: 30px;
+}
+
+.search__content .icn_search button {
+  padding: 8px;
+  background-color: #333;
+  color: #fff;
+  font-size: 21px;
+  font-weight: normal;
+  border: none;
+}
+
+.search__content .icn_search .form-control {
+  background-color: #333;
+  border: none;
+}
+
+.search__content .icn_search .form-control::placeholder {
+  color: #fff;
+  font-size: 21px;
+  font-weight: normal;
+}
+
+.search__content .icn_search .form-control:focus {
+  box-shadow: none;
+}
+
+.search__content .popular {
+  display: flex;
+  padding: 8px 0;
+}
+
+.search__content .popular span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  margin-right: 15px;
+}
+
+.search__content .popular li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 15px;
+}
+
+.search__content .popular li a {
+  color: #a7a7a7;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.search__content .popular li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.webLinks {
+  background-color: #242424;
+}
+
+.webLinks .webLinks__content {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0 45px;
+}
+
+.webLinks .webLinks__content p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  padding-bottom: 8px;
+}
+
+.webLinks .webLinks__content li {
+  list-style: none;
+  padding-bottom: 8px;
+}
+
+.webLinks .webLinks__content li a {
+  color: #a7a7a7;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.webLinks .webLinks__content li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.contact {
+  background-color: #102b4e;
+}
+
+.contact .contact__content {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.contact .contact__content .update, .contact .contact__content .share {
+  cursor: pointer;
+}
+
+.contact .contact__content .update i, .contact .contact__content .share i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #27A9E8;
+}
+
+.contact .contact__content .update span, .contact .contact__content .share span {
+  color: #27A9E8;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.contact .contact__content .social {
+  align-self: center;
+  text-align: right;
+}
+
+.contact .contact__content .social span {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.contact .contact__content .social .fab {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact .contact__content .social .fa-facebook-square {
+  background-color: #3C5B99;
+}
+
+.contact .contact__content .social .fa-twitter {
+  background-color: #1DA2F3;
+}
+
+.contact .contact__content .social .fa-youtube {
+  background-color: #FF0100;
+}
+
+.contact .contact__content .social .fa-instagram {
+  background-color: #DC2C75;
+}
+
+footer {
+  background-color: #f7f7f7;
+}
+
+footer .footer__content {
+  padding: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+footer .footer__content .change {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer__content .change .language i {
+  color: #0276b3;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+footer .footer__content .change .language a {
+  text-decoration: underline;
+  color: #0276b3;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+footer .footer__content .change .language a:hover {
+  color: #102b4e;
+}
+
+footer .footer__content .change .logo img {
+  width: 80px;
+}
+
+footer .footer__content p {
+  color: #a7a7a7;
+  font-size: 13px;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+footer .footer__content li {
+  list-style: none;
+  display: inline;
+  padding-right: 25px;
+}
+
+footer .footer__content li a {
+  color: #a7a7a7;
+  font-size: 13px;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+footer .footer__content li a:hover {
+  color: #555;
+}
+
+.back-to-top i {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(0, 0, 0, 0.411);
+  color: white;
+  font-size: 35px;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.back-to-top i:hover {
+  background-color: rgba(0, 0, 0, 0.811);
+  transform: scale(1.1);
+}
+/*# sourceMappingURL=main.css.map */
